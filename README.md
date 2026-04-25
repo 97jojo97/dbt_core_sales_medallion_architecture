@@ -4,13 +4,13 @@ This project builds a professional data warehouse for sales and returns operatio
 ## What this project develops
 The system automates the transformation of raw sales records into high-quality data models:
 
-### Bronze Layer: Captures raw data from sources including customers, products, stores, and sales transactions. It keeps the data in its original format so we always have a record of the source.
+Bronze Layer: Captures raw data from sources including customers, products, stores, and sales transactions. It keeps the data in its original format so we always have a record of the source.
 
-### Silver Layer: Cleans and validates the data. It merges sales and return information, handles data types, and applies business logic to create a reliable middle layer.
+Silver Layer: Cleans and validates the data. It merges sales and return information, handles data types, and applies business logic to create a reliable middle layer.
 
-### Gold Layer: Delivers the final business metrics. This is the "single source of truth" where stakeholders get their key performance indicators (KPIs) and reporting items.
+Gold Layer: Delivers the final business metrics. This is the "single source of truth" where stakeholders get their key performance indicators (KPIs) and reporting items.
 
-### Snapshots: Tracks changes in data over time. This allows the business to see how product details or sales records looked at any point in history.
+Snapshots: Tracks changes in data over time. This allows the business to see how product details or sales records looked at any point in history.
 
 Quality Control: Built-in tests ensure that values like price or quantity are never negative and that the data stays consistent.
 
