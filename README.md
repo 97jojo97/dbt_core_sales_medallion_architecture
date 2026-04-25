@@ -1,20 +1,20 @@
-Sales Data Pipeline with Medallion Architecture
+# Sales Data Pipeline with Medallion Architecture
 This project builds a professional data warehouse for sales and returns operations. It uses a medallion architecture to move data through three stages: Bronze, Silver, and Gold. This ensures that the final reports are accurate, clean, and ready for business decisions.
 
-What this project develops
+## What this project develops
 The system automates the transformation of raw sales records into high-quality data models:
 
-Bronze Layer: Captures raw data from sources including customers, products, stores, and sales transactions. It keeps the data in its original format so we always have a record of the source.
+### Bronze Layer: Captures raw data from sources including customers, products, stores, and sales transactions. It keeps the data in its original format so we always have a record of the source.
 
-Silver Layer: Cleans and validates the data. It merges sales and return information, handles data types, and applies business logic to create a reliable middle layer.
+### Silver Layer: Cleans and validates the data. It merges sales and return information, handles data types, and applies business logic to create a reliable middle layer.
 
-Gold Layer: Delivers the final business metrics. This is the "single source of truth" where stakeholders get their key performance indicators (KPIs) and reporting items.
+### Gold Layer: Delivers the final business metrics. This is the "single source of truth" where stakeholders get their key performance indicators (KPIs) and reporting items.
 
-Snapshots: Tracks changes in data over time. This allows the business to see how product details or sales records looked at any point in history.
+### Snapshots: Tracks changes in data over time. This allows the business to see how product details or sales records looked at any point in history.
 
 Quality Control: Built-in tests ensure that values like price or quantity are never negative and that the data stays consistent.
 
-Why this benefits stakeholders
+## Why this benefits stakeholders
 This pipeline solves common data problems that slow down business growth:
 
 Trust in Numbers: Automated testing prevents bad data from reaching reports. When a stakeholder looks at a sales figure, they know it has been through multiple validation checks.
@@ -30,7 +30,7 @@ Unified View: It combines fragmented data from customers, stores, and returns in
 Technical Setup
 This project runs on dbt (data build tool).
 
-Install dependencies: Use the provided requirements file or python environment.
+## Install dependencies: Use the provided requirements file or python environment.
 
 Configure profile: Set up your connection to the data warehouse.
 
